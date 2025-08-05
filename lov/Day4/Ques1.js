@@ -1,0 +1,1 @@
+// Event - Event in JavaScript is something that happens on a webpage — like if user clicks on screen or a button OR when a webpage loads.
