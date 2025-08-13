@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #282c34;
+      color: #fff;
+      text-align: center;
+      padding: 40px;
+    }
+    .quiz-box {
+      background: #3b3f4a;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      margin: auto;
+    }
+    .question {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .option {
+      background: #555;
+      padding: 10px;
+      margin: 5px 0;
+      border: none;
+      width: 100%;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .option:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+    .next-btn {
+      margin-top: 15px;
+      padding: 8px 16px;
+      font-size: 16px;
+      cursor: pointer;
+      background: #04c;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+    .timer {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="quiz-box">
+    <div class="timer" id="timer">Time: 10</div>
+    <div class="question" id="question"></div>
+    <div id="options"></div>
+    <button class="next-btn" onclick="nextQuestion()">Next</button>
+  </div>
+  <div id="result" style="display:none; font-size: 22px; margin-top: 20px;"></div>
+
+  <script src="main.js">
+   
+  </script>
+</body>
+</html>

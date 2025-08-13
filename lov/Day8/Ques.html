@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather App</title>
+  <style>
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background: #fef3c7;
+  transition: background 0.5s ease-in-out;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  width: 200px;
+}
+
+input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 5px rgba(56, 189, 248, 0.5);
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 16px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 6px;
+  background: #38bdf8;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0ea5e9;
+}
+
+#loading {
+  margin-top: 15px;
+  color: #555;
+  font-style: italic;
+}
+
+#weather {
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 250px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+#weather:hover {
+  transform: scale(1.03);
+}
+
+#weather img {
+  margin-top: 10px;
+}
+
+  </style>
+</head>
+<body>
+  <h1>Weather App</h1>
+  <input id="city" placeholder="Enter city">
+  <button onclick="getWeather()">Get Weather</button>
+
+  <p id="loading">Loading...</p>
+  <div id="weather"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
